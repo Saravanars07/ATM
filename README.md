@@ -119,25 +119,37 @@
 
 # 🏧 ATM Simulator (Python Tkinter)
 
-A simple, interactive ATM machine simulation using Python and Tkinter!  
-You can check your balance, deposit, withdraw, and log out—all with a friendly graphical interface.
+
+A beginner-friendly ATM Machine simulation built with Python and Tkinter.
+You can log in with a PIN, check your balance, deposit, withdraw, view transaction history, change your PIN, and even create a new account—all with a simple graphical interface!
 
 ---
 
 ## 🌟 Features
 
-- **PIN-based Login:** Secure access using a 4-digit PIN.
-- **Multiple Users:** 10 sample accounts to try.
-- **Check Balance:** See how much money you have.
-- **Deposit & Withdraw:** Add or take out money, with instant feedback.
-- **Easy Navigation:** Clear buttons and prompts.
-- **Custom Icon:** Looks more like a real ATM!
+- **PIN-based Login:** Secure access for each user.
+- **Multiple Users:** Start with 10 sample accounts.
+- **Check Balance:** Instantly see your available funds.
+- **Deposit & Withdraw:** Add or withdraw money, with clear feedback.
+- **Transaction History:** View your last 10 transactions.
+- **Change PIN:** Update your PIN securely.
+- **Create Account:** Open a new account with a unique PIN.
+- **Custom Icons:** Looks and feels like a real ATM!
 
 ---
 
 ## 🖼️ Screenshots
 
 > **Tip:** Save your own screenshots as `login.png`, `menu.png`, and `balance.png` in a `screenshots` folder.
+> Save your own screenshots as `login.png`, `menu.png`, and `history.png` in a `screenshots` folder.  
+> Use `.ico` files for custom window icons (e.g., `Atm.ico`, `Balance.ico`, `Deposit.ico`).
+
+| Login Screen | Main Menu | Transaction History |
+|:------------:|:---------:|:------------------:|
+| ![Login](screenshots/login.png) | ![Menu](screenshots/menu.png) | ![History](screenshots/history.png) |
+
+**ATM Icon Example:**  
+![ATM Icon](Image/Atm.ico)
 
 ### 1. Login Screen
 
@@ -181,28 +193,25 @@ Try logging in with these sample PINs:
 
 ---
 
-## 📝 How it Works
+## 📝 How It Works
 
-1. **Enter your PIN** on the login screen.
-2. **Main menu** appears with options:  
-   - Check Balance  
-   - Deposit  
-   - Withdraw  
-   - Logout/Exit
-3. **Choose an action** and follow the prompts.
-4. **Logout** to return to the login screen.
+1. **Login:** Enter your 4-digit PIN to access your account.
+2. **Main Menu:** Choose from Check Balance, Deposit, Withdraw, Transaction History, Change PIN, Create Account, Logout, or Exit.
+3. **Transactions:** Follow prompts for deposits or withdrawals. All actions are confirmed with pop-up messages.
+4. **History:** See your last 10 transactions, including deposits and withdrawals.
+5. **Change PIN:** Enter and confirm a new 4-digit PIN.
+6. **Create Account:** Enter a name, unique PIN, and initial deposit to open a new account.
 
 ---
 
-## 🛠️ Code Highlights
+## 🛠️ Code Overview
 
-- **Tkinter** for the GUI
-- **List of dictionaries** for user data
-- **Error handling** for invalid PINs and amounts
-- **Custom icon** (optional, set your `.ico` file path in the code)
+- **Tkinter GUI:** For all windows and dialogs.
+- **User Data:** Stored as a list of dictionaries, each representing an account.
+- **Icons:** Set with `root.iconbitmap("Image/Atm.ico")` and similar lines for each window (add your own `.ico` files).
+- **Transaction History:** Each user has a `history` list updated after every deposit or withdrawal.
 
 ---
-
 ## 📂 File Structure
 
 
@@ -210,24 +219,30 @@ Try logging in with these sample PINs:
 
 ## 💡 Customization
 
-- **Change users:** Edit the `self.users` list in the code.
-- **Change icon:** Replace the path in `root.iconbitmap("path/to/atm.ico")`.
-- **Add features:** Try adding PIN change, transaction history, or account creation!
+- **Add/Remove Users:** Edit the `self.users` list in the code.
+- **Change Icons:** Replace `.ico` files in the `Image/` folder and update icon paths in the code.
+- **Improve UI:** Add more features, such as PIN reset by admin, or export transaction history.
 
 ---
 
 ## 📚 Learn More
 
-- [ATM Simulation Project Example (PDF)](https://www.scribd.com/document/492185999/Atm-i-Python-Mini-Project)[1]
-- [Tkinter ATM Project on Kashipara](https://www.kashipara.com/project/idea/python/atm-project-gui-based-in-python-_3586.html)[2]
-- [Python GUI ATM Tutorial](https://pythongui.org/how-to-make-a-python-gui-for-an-atm-system/)[7]
-
+- [ATM Simulation Project Example (PDF)](https://www.scribd.com/document/492185999/Atm-i-Python-Mini-Project)
+- [Tkinter ATM Project on Kashipara](https://www.kashipara.com/project/idea/python/atm-project-gui-based-in-python-_3586.html)
+- [Python GUI ATM Tutorial](https://pythongui.org/how-to-make-a-python-gui-for-an-atm-system/)
+- [Tkinter Official Documentation](https://docs.python.org/3/library/tkinter.html)
+- [Beginner Python Projects](https://www.kashipara.com/project/idea/python/atm-project-gui-based-in-python-_3586.html)
+- [Python GUI ATM Tutorial](https://pythongui.org/how-to-make-a-python-gui-for-an-atm-system/)
+- 
 ---
 
 ## 🏁 Start Coding and Have Fun!
 
 ---
 
-> **Note:** This is a learning project. No real money is involved!
+> **Note:** This project is for educational purposes only. No real money is involved!
+
+---
+*Happy Coding!*
 
 
