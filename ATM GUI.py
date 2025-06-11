@@ -44,7 +44,7 @@ class ATM:
 
     def show_menu(self):
         self.clear_window()
-        self.root.iconbitmap("D:/Img/atm_22180 (1).ico")  
+        #self.root.iconbitmap("Image/atm_22180.ico")
         tk.Label(self.root,text="Welcome to ATM", font=("Arial", 14)).pack(pady=10)
         tk.Label(self.root,text=f"User name:{self.current_user['name']}",font=("Arial", 14)).pack(pady=10)
         tk.Button(self.root,text="Check Balance",width=20,command=lambda:self.process_transaction(self.display_balance)).pack(pady=5)
@@ -60,7 +60,7 @@ class ATM:
 
     def deposit_window(self):
         self.clear_window()
-        self.root.iconbitmap("D:/Img/deposit_money_cash_banking_bank_icon_262091.ico") 
+        #self.root.iconbitmap("Image/Deposit.ico")
         tk.Label(self.root,text="Enter amount to deposit:",font=("Arial",12)).pack(pady=10)
         self.deposit_entry=tk.Entry(self.root,width=15,font=("Arial",12))
         self.deposit_entry.pack(pady=5)
@@ -87,7 +87,7 @@ class ATM:
 
     def withdraw_window(self):
         self.clear_window()
-        self.root.iconbitmap("D:/Img/banking_business_payment_cash_finance_money_coin_icon_254032.ico")
+       # self.root.iconbitmap("Image/Withdrawal.ico")
         tk.Label(self.root,text="Enter amount to withdraw:",font=("Arial", 12)).pack(pady=10)
         self.withdraw_entry=tk.Entry(self.root,width=15,font=("Arial", 12))
         self.withdraw_entry.pack(pady=5)
