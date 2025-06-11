@@ -140,13 +140,13 @@ You can check your balance, deposit, withdraw, and log out—all with a friendly
 > **Tip:** Save your own screenshots as `login.png`, `menu.png`, and `balance.png` in a `screenshots` folder.
 
 ### 1. Login Screen
-![Login Screen](screenshots/login.png)
+
 
 ### 2. Main Menu
-![Menu Screen](screenshots/menu.png)
+
 
 ### 3. Balance Display
-![Balance Screen](screenshots/balance.png)
+
 
 ---
 
@@ -204,4 +204,30 @@ Try logging in with these sample PINs:
 ---
 
 ## 📂 File Structure
+
+
+---
+
+## 💡 Customization
+
+- **Change users:** Edit the `self.users` list in the code.
+- **Change icon:** Replace the path in `root.iconbitmap("path/to/atm.ico")`.
+- **Add features:** Try adding PIN change, transaction history, or account creation!
+
+---
+
+## 📚 Learn More
+
+- [ATM Simulation Project Example (PDF)](https://www.scribd.com/document/492185999/Atm-i-Python-Mini-Project)[1]
+- [Tkinter ATM Project on Kashipara](https://www.kashipara.com/project/idea/python/atm-project-gui-based-in-python-_3586.html)[2]
+- [Python GUI ATM Tutorial](https://pythongui.org/how-to-make-a-python-gui-for-an-atm-system/)[7]
+
+---
+
+## 🏁 Start Coding and Have Fun!
+
+---
+
+> **Note:** This is a learning project. No real money is involved!
+
 
