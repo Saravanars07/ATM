@@ -146,7 +146,7 @@ You can log in with a PIN, check your balance, deposit, withdraw, view transacti
 
 | Login Screen | Main Menu | Transaction History |
 |:------------:|:---------:|:------------------:|
-| ![Login](screenshots/login.png) | ![Menu](screenshots/menu.png) | ![History](screenshots/history.png) |
+| ![Login](screenshot/login.png) | ![Menu](screenshots/menu.png) | ![History](screenshots/history.png) |
 
 **ATM Icon Example:**  
 ![ATM Icon](Image/Atm.ico)
