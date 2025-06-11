@@ -157,7 +157,7 @@ You can check your balance, deposit, withdraw, and log out—all with a friendly
 3. **Open a terminal** in the project folder.
 4. **Run:**
     ```
-    python atm.py
+    python ATM GUI.py
     ```
 
 ---
