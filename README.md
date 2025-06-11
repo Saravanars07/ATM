@@ -114,3 +114,94 @@
   - Transactions are simulated with delays for realism.
   - The script does not persist data between runs.
   - There are some spelling mistakes in the prompts (e.g., "Desopit" instead of "Deposit", "Withdirwal" instead of "Withdrawal"). You can correct these for a more polished experience.
+
+
+
+# 🏧 ATM Simulator (Python Tkinter)
+
+A simple, interactive ATM machine simulation using Python and Tkinter!  
+You can check your balance, deposit, withdraw, and log out—all with a friendly graphical interface.
+
+---
+
+## 🌟 Features
+
+- **PIN-based Login:** Secure access using a 4-digit PIN.
+- **Multiple Users:** 10 sample accounts to try.
+- **Check Balance:** See how much money you have.
+- **Deposit & Withdraw:** Add or take out money, with instant feedback.
+- **Easy Navigation:** Clear buttons and prompts.
+- **Custom Icon:** Looks more like a real ATM!
+
+---
+
+## 🖼️ Screenshots
+
+> **Tip:** Save your own screenshots as `login.png`, `menu.png`, and `balance.png` in a `screenshots` folder.
+
+### 1. Login Screen
+![Login Screen](screenshots/login.png)
+
+### 2. Main Menu
+![Menu Screen](screenshots/menu.png)
+
+### 3. Balance Display
+![Balance Screen](screenshots/balance.png)
+
+---
+
+## 🚀 How to Run
+
+1. **Install Python** (if you don’t have it).
+2. **Download the code** (`atm.py`) and (optionally) an icon file (`atm.ico`).
+3. **Open a terminal** in the project folder.
+4. **Run:**
+    ```
+    python atm.py
+    ```
+
+---
+
+## 👤 User Accounts
+
+Try logging in with these sample PINs:
+
+| Name     | PIN   | Balance (₹) |
+|----------|-------|-------------|
+| Alice    | 1111  | 1200        |
+| Bob      | 2222  | 1500        |
+| Charlie  | 3333  | 900         |
+| David    | 4444  | 2000        |
+| Eva      | 5555  | 1100        |
+| Frank    | 6666  | 800         |
+| Grace    | 7777  | 1700        |
+| Helen    | 8888  | 1300        |
+| Ivan     | 9999  | 1400        |
+| Jane     | 0000  | 1000        |
+
+---
+
+## 📝 How it Works
+
+1. **Enter your PIN** on the login screen.
+2. **Main menu** appears with options:  
+   - Check Balance  
+   - Deposit  
+   - Withdraw  
+   - Logout/Exit
+3. **Choose an action** and follow the prompts.
+4. **Logout** to return to the login screen.
+
+---
+
+## 🛠️ Code Highlights
+
+- **Tkinter** for the GUI
+- **List of dictionaries** for user data
+- **Error handling** for invalid PINs and amounts
+- **Custom icon** (optional, set your `.ico` file path in the code)
+
+---
+
+## 📂 File Structure
+
