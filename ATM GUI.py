@@ -119,7 +119,7 @@ class ATM:
 if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("350x350")
-    root.iconbitmap("/ATMImage/atm_22180.ico")  # Uncomment and set your icon path if needed
+    root.iconbitmap("Image/atm_22180.ico")  # Uncomment and set your icon path if needed
     root.resizable(False, False)
     app = ATM(root)
     root.mainloop()
