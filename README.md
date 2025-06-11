@@ -233,7 +233,7 @@ Try logging in with these sample PINs:
 - [Tkinter Official Documentation](https://docs.python.org/3/library/tkinter.html)
 - [Beginner Python Projects](https://www.kashipara.com/project/idea/python/atm-project-gui-based-in-python-_3586.html)
 - [Python GUI ATM Tutorial](https://pythongui.org/how-to-make-a-python-gui-for-an-atm-system/)
-- 
+
 ---
 
 ## 🏁 Start Coding and Have Fun!
