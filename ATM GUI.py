@@ -46,7 +46,7 @@ class ATM:
     def show_menu(self):
         self.clear_window()
         #self.root.title("ATM Machine")
-        #self.root.iconbitmap("/Image/Atm.ico")
+        #self.root.iconbitmap("Image/Atm.ico")
         tk.Label(self.root,text="Welcome to ATM", font=("Arial", 14)).pack(pady=10)
         tk.Label(self.root,text=f"User name:{self.current_user['name']}",font=("Arial", 14)).pack(pady=10)
         tk.Button(self.root,text="Check Balance",width=20,command=lambda:self.process_transaction(self.display_balance)).pack(pady=5)
@@ -61,14 +61,14 @@ class ATM:
     def display_balance(self):
         self.clear_window()
         #self.root.title("Check Balance")
-        #self.root.iconbitmap("/Image/Balance.ico") 
+        #self.root.iconbitmap("Image/Balance.ico") 
         tk.Label(self.root,text=f"Your balance is: ₹{self.current_user['balance']}",font=("Arial",14)).pack(pady=15)
         tk.Button(self.root,text="Back",command=lambda:self.process_transaction(self.show_menu)).pack(pady=10)
 
     def deposit_window(self):
         self.clear_window()
         #self.root.title("Deposit")
-        #self.root.iconbitmap("/Image/Deposit.ico") 
+        #self.root.iconbitmap("Image/Deposit.ico") 
         tk.Label(self.root,text="Enter amount to deposit:",font=("Arial",12)).pack(pady=10)
         self.deposit_entry=tk.Entry(self.root,width=15,font=("Arial",12))
         self.deposit_entry.pack(pady=5)
@@ -96,7 +96,7 @@ class ATM:
     def withdraw_window(self):
         self.clear_window()
         #self.root.title("Withdrawal")
-        #self.root.iconbitmap("/Images/Withdrawal.ico")
+        #self.root.iconbitmap("Image/Withdrawal.ico")
         tk.Label(self.root,text="Enter amount to withdraw:",font=("Arial", 12)).pack(pady=10)
         self.withdraw_entry=tk.Entry(self.root,width=15,font=("Arial", 12))
         self.withdraw_entry.pack(pady=5)
@@ -124,7 +124,7 @@ class ATM:
     def change_pin_window(self):
         self.clear_window()
         #self.root.title("Change pin")
-        #self.root.iconbitmap("/Image/Pin.ico")
+        #self.root.iconbitmap("Image/Pin.ico")
         tk.Label(self.root,text=f"User name:{self.current_user['name']}",font=("Arial",14)).pack(pady=10)
         tk.Label(self.root,text="Enter new PIN:",font=("Arial", 12)).pack(pady=10)
         self.new_pin_entry=tk.Entry(self.root,show="*",width=15,font=("Arial",12))
@@ -171,7 +171,7 @@ class ATM:
     def show_history(self):
         self.clear_window()
         #self.root.title("Transaction History")
-        #self.root.iconbitmap("/Images/History.ico")
+        #self.root.iconbitmap("Image/History.ico")
         tk.Label(self.root,text="Transaction History",font=("Arial",14)).pack(pady=10)
         history = self.current_user.get("history",[])
         if not history:
@@ -184,7 +184,7 @@ class ATM:
     def create_account_window(self):
         self.clear_window()
         #self.root.title("Create Account")
-        #self.root.iconbitmap("/Image/Account.ico")
+        #self.root.iconbitmap("Image/Account.ico")
         tk.Label(self.root,text="Create New Account",font=("Arial",14)).pack(pady=10)
         tk.Label(self.root,text="Name:",font=("Arial",12)).pack()
         self.new_name_entry=tk.Entry(self.root,width=20,font=("Arial",12))
@@ -233,7 +233,7 @@ class ATM:
 if __name__ == "__main__":
     root = tk.Tk()
     root.geometry("400x400")
-    root.iconbitmap("/Image/Atm.ico")  # Uncomment and set your icon path if needed
+    root.iconbitmap("Image/Atm.ico")  # Uncomment and set your icon path if needed
     root.resizable(False, False)
     app = ATM(root)
     root.mainloop()
