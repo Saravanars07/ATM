@@ -103,7 +103,7 @@ class ATM:
         tk.Button(self.root,text="Withdraw",command=self.withdraw_amount).pack(pady=10)
         tk.Button(self.root,text="Cancel",command=lambda: self.withdraw_entry.delete(0, tk.END)).pack(pady=5)
         tk.Button(self.root,text="Back",command=lambda:self.process_transaction(self.show_menu)).pack(pady=5)
-
+ 
     def withdraw_amount(self):
         try:
             amount=int(self.withdraw_entry.get())
